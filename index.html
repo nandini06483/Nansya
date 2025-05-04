@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nansya Outfit Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="nansya.css">
+  <script src="nansya.js"></script>
+
+
+ 
+   
+ 
+</head>
+<body>
+  <header>
+    <h1>Nansya</h1>
+  </header>
+
+  <nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('about')">About Us</button>
+    <button onclick="showSection('help')">Help</button>
+    <button onclick="showSection('feedback')">Feedback</button>
+  </nav>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section active">
+      <h2>✨ Hello, Let’s find your perfect outfit ✨</h2>
+      <div class="inputs">
+        <select id="outfitType">
+          <option value="">Choose Outfit Type</option>
+          <option value="casual">Casual</option>
+          <option value="formal">Formal</option>
+        </select>
+        <select id="dressingFor">
+          <option value="">You're dressing for...</option>
+          <option value="daily">Daily Wear</option>
+          <option value="party">Party</option>
+        </select>
+        <select id="skinTone">
+          <option value="">Select Skin Tone</option>
+          <option value="fair">Fair</option>
+          <option value="medium">Medium</option>
+          <option value="dark">Dark</option>
+        </select>
+        <input type="text" id="colorMatch" placeholder="What color item to match? (e.g. blue jeans)" />
+      </div>
+      <button class="generate" onclick="generateOutfit()">+ Generate Outfit</button>
+
+      <div class="output" id="lookOutput">
+        <h3>Your Look:</h3>
+        <p><strong>Top:</strong> <span id="top"></span></p>
+        <p><strong>Bottom:</strong> <span id="bottom"></span></p>
+        <p><strong>Shoes:</strong> <span id="shoes"></span></p>
+        <p><strong>Accessories:</strong> <span id="accessories"></span></p>
+        <p><strong>Color Tip:</strong> <span id="colorTip"></span></p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>👗 About Nansya</h2>
+      <p>Nansya is your AI-powered outfit assistant. Whether you’re getting ready for daily wear or a glamorous party, we help you dress confidently and match your style with smart suggestions.</p>
+    </section>
+
+    <!-- Help Section -->
+    <section id="help" class="section">
+      <h2>🆘 Help</h2>
+      <p>To use this app:</p>
+      <ol style="text-align: left; display: inline-block;">
+        <li>Select your outfit type and dressing occasion.</li>
+        <li>Choose your skin tone for personalized color tips.</li>
+        <li>Enter a clothing color you'd like to match.</li>
+        <li>Click "Generate Outfit" and enjoy your results!</li>
+      </ol>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="section">
+      <h2>💬 Feedback</h2>
+      <p>We'd love to hear from you!</p>
+      <textarea rows="5" cols="40" placeholder="Share your thoughts, suggestions or issues..."></textarea><br><br>
+      <button style="background-color: #7b1fa2; color: white; padding: 10px 20px; border-radius: 25px; border: none;">Submit Feedback</button>
+    </section>
+
+    <div class="footer">
+      &copy; 2025 Nansya | Built with ❤️ for style lovers <br>
+      <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </div>
+  </main>
+
+ 
+</body>
+</html>
