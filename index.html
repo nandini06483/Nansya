@@ -4,18 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nansya Outfit Generator</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"> 
-  <script src="script.js"></script>
- 
-
- 
-   
- 
 </head>
 <body>
   <header>
-    <h1>Nansya</h1>
+    <div class="logo-container">
+      <img src="C:\Users\hp\Downloads\Nansya.gif" alt="Nansya Logo" class="logo" />
+      <h1>Nansya</h1>
+    </div>
   </header>
 
   <nav>
@@ -26,7 +23,6 @@
   </nav>
 
   <main>
-    <!-- Home Section -->
     <section id="home" class="section active">
       <h2>✨ Hello, Let’s find your perfect outfit ✨</h2>
       <div class="inputs">
@@ -60,17 +56,15 @@
       </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section">
       <h2>👗 About Nansya</h2>
       <p>Nansya is your AI-powered outfit assistant. Whether you’re getting ready for daily wear or a glamorous party, we help you dress confidently and match your style with smart suggestions.</p>
     </section>
 
-    <!-- Help Section -->
     <section id="help" class="section">
       <h2>🆘 Help</h2>
       <p>To use this app:</p>
-      <ol style="text-align: left; display: inline-block;">
+      <ol>
         <li>Select your outfit type and dressing occasion.</li>
         <li>Choose your skin tone for personalized color tips.</li>
         <li>Enter a clothing color you'd like to match.</li>
@@ -78,12 +72,11 @@
       </ol>
     </section>
 
-    <!-- Feedback Section -->
     <section id="feedback" class="section">
       <h2>💬 Feedback</h2>
       <p>We'd love to hear from you!</p>
       <textarea rows="5" cols="40" placeholder="Share your thoughts, suggestions or issues..."></textarea><br><br>
-      <button style="background-color: #7b1fa2; color: white; padding: 10px 20px; border-radius: 25px; border: none;">Submit Feedback</button>
+      <button class="submit-feedback">Submit Feedback</button>
     </section>
 
     <div class="footer">
@@ -92,6 +85,6 @@
     </div>
   </main>
 
- 
+  <script src="script.js"></script>
 </body>
 </html>
